@@ -1,0 +1,148 @@
+:root {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px !important;
+  background: #eee;
+  color: #333;
+}
+
+.header {
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #1b65cd, #10a910);
+  color: #fff;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.menu-wrapper {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 50px;
+}
+
+.header-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-right: 400px;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home h2,
+#home p {
+  flex: 1;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+section {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1b65cd;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #1b65cd;
+  font-size: 2rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.social-media a:hover {
+  color: #10a910;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .menu-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .header-name {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    width: 95%;
+  }
+}
